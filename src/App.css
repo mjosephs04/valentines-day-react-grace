@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&family=Calligraffitti&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
 
 body{
     background: linear-gradient(45deg,pink,violet);
@@ -115,7 +116,7 @@ button:hover {
 .valentine {
   font-family: 'Calligraffitti', cursive;
   font-weight: 700;
-  font-size: 4rem;
+  font-size: 6rem;
   position: absolute;
   text-shadow: -5px 2px 7px #ced0d3;
   top: 40%;
@@ -130,11 +131,20 @@ button:hover {
     8px 8px 0px #EF5097, 
     10px 10px 0px #6868AC;
 }
- .pre-valentine{
-  position: absolute;
-  text-align: center;
-  font-weight: 700;
-  font-size: 2rem;
-  top:30%;
-  left: 43%;
- }
+
+.pre-valentine-container {
+    position: absolute;
+    text-align: center;
+    top: 18%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.pre-valentine {
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-family: "Dancing Script", cursive;
+    color: #494949;
+    overflow: hidden;
+    white-space: nowrap;
+}

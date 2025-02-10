@@ -1,14 +1,12 @@
 import React, { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
-
 import './App.css';
-
-
+import { motion } from "framer-motion";
 
 function App() {
 
   const [x, setx] = useState(52);
-  const [y, sety] = useState(55);
+  const [y, sety] = useState(65);
   const form = useRef();
 
 
@@ -40,7 +38,7 @@ function App() {
   }
 
   const clickedYes = () => {
-    alert("Its either you couldn't catch the no button or you really wanted to be my valentines date. Either way an email has been sent to me notifying me what you choose")
+    alert("Looks like you really want to be my valentine. I just got an email telling me :)")
   }
 
   function mouseOver() {
@@ -56,7 +54,7 @@ function App() {
   
   var yesStyle = {
     left: "40%",
-    top: "55%",
+    top: "65%",
     position: "absolute",
   }
 
@@ -76,28 +74,53 @@ function App() {
 
 
   return (
-    <>
-    <p className="pre-valentine">
-      Will you be my
-    </p>
-    <p className="valentine">Valentine</p>
-    <form onSubmit={sendEmail} ref={form}>
-      <button 
-        style={yesStyle}
-        type="submit"
-        onClick={clickedYes}
-      >
-        YES!
-      </button> 
-    </form>
-    <button
-      onMouseOver={mouseOver}
-      style={noStyle}
-      onClick={popUp}
-    >
-      no
-  </button>
-  </>
+      <>
+        <div className="pre-valentine-container">
+          <motion.p
+              className="pre-valentine"
+              initial={{opacity: 0, y: 10}}
+              animate={{opacity: 1, y: 0}}
+              transition={{duration: 2, delay: 0.5}}
+          >
+            Hey Grace! Sorry I wasn't able to do this in person,
+          </motion.p>
+
+          <motion.p
+              className="pre-valentine"
+              initial={{opacity: 0, y: 10}}
+              animate={{opacity: 1, y: 0}}
+              transition={{duration: 2, delay: 2.5}}
+          >
+            but I came up with the next best thing :)!
+          </motion.p>
+
+          <motion.p
+              className="pre-valentine"
+              initial={{opacity: 0, y: 10}}
+              animate={{opacity: 1, y: 0}}
+              transition={{duration: 2, delay: 6}}
+          >
+            Will you be my Valentine?
+          </motion.p>
+        </div>
+        <p className="valentine">Valentine</p>
+        <form onSubmit={sendEmail} ref={form}>
+          <button
+              style={yesStyle}
+              type="submit"
+              onClick={clickedYes}
+          >
+            YES!
+          </button>
+        </form>
+        <button
+            onMouseOver={mouseOver}
+            style={noStyle}
+            onClick={popUp}
+        >
+          no
+        </button>
+      </>
   );
 }
 
