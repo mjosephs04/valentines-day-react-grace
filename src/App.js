@@ -2,6 +2,8 @@ import React, { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import './App.css';
 import { motion } from "framer-motion";
+import { Heart, Stars } from 'lucide-react';
+import flowerBear from "./flowerBear.gif"
 
 function App() {
 
@@ -75,7 +77,21 @@ function App() {
 
   return (
       <>
-        <div className="pre-valentine-container">
+        <img
+            className="flowerBear"
+            src={flowerBear}
+        />
+        <div className="pre-valentine-container" style={{paddingTop: "30px"}}>
+          <div className="flex justify-center space-x-4 mb-6">
+            {[...Array(5)].map((_, i) => (
+                <Heart
+                    key={i}
+                    className="text-pink-500 heart-bounce"
+                    style={{animationDelay: `${i * 0.15}s`}}
+                    size={24}
+                />
+            ))}
+          </div>
           <motion.p
               className="pre-valentine"
               initial={{opacity: 0, y: 10}}
@@ -104,6 +120,12 @@ function App() {
           </motion.p>
         </div>
         <p className="valentine">Valentine?</p>
+        <div className="stars-left">
+          <Stars size={32}/>
+        </div>
+        <div className="stars-right">
+          <Stars size={32}/>
+        </div>
         <form onSubmit={sendEmail} ref={form}>
           <button
               style={yesStyle}

@@ -148,3 +148,39 @@ button:hover {
     overflow: hidden;
     white-space: nowrap;
 }
+
+.stars-left{
+    position: absolute;
+    left: 36%;
+    top: 48%;
+    color: #F9f1cc;
+}
+
+.stars-right{
+    position: absolute;
+    left: 62.5%;
+    top: 48%;
+    color: #F9f1cc;
+}
+
+@keyframes custom-bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.heart-bounce {
+    animation: custom-bounce 1s infinite ease-in-out;
+}
+
+.flowerBear{
+    position: absolute;
+    left: 46%;
+    top: 1%;
+    height: 150px;
+    border-radius: 0.5rem; /* Equivalent to Tailwind's rounded-lg */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Equivalent to Tailwind's shadow-lg */
+}
