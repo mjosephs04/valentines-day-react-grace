@@ -38,7 +38,7 @@ function App() {
   }
 
   const clickedYes = () => {
-    alert("Looks like you really want to be my valentine. I just got an email telling me :)")
+    alert("YAYYY you really want to be my valentine;) I just got an email telling me :)")
   }
 
   function mouseOver() {
@@ -62,7 +62,7 @@ function App() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_z199l6g', 'template_w4y121f', form.current, 'KI7bceeNiZsp0c9Kp')
+    emailjs.sendForm('service_fidzscf', 'template_240ga9k', form.current, '7tIyqxKRLgB8vgXqN')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
@@ -100,10 +100,10 @@ function App() {
               animate={{opacity: 1, y: 0}}
               transition={{duration: 2, delay: 6}}
           >
-            Will you be my Valentine?
+            Will you be my
           </motion.p>
         </div>
-        <p className="valentine">Valentine</p>
+        <p className="valentine">Valentine?</p>
         <form onSubmit={sendEmail} ref={form}>
           <button
               style={yesStyle}
