@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/valentines-day-react-grace/static/css/main.e581720c.css",
-    "main.js": "/valentines-day-react-grace/static/js/main.17250ed3.js",
+    "main.css": "/valentines-day-react-grace/static/css/main.d66deb63.css",
+    "main.js": "/valentines-day-react-grace/static/js/main.77123741.js",
     "static/js/787.c4e7f8f9.chunk.js": "/valentines-day-react-grace/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/flowerBear.gif": "/valentines-day-react-grace/static/media/flowerBear.7cb1db98af7339613d26.gif",
     "index.html": "/valentines-day-react-grace/index.html",
-    "main.e581720c.css.map": "/valentines-day-react-grace/static/css/main.e581720c.css.map",
-    "main.17250ed3.js.map": "/valentines-day-react-grace/static/js/main.17250ed3.js.map",
+    "main.d66deb63.css.map": "/valentines-day-react-grace/static/css/main.d66deb63.css.map",
+    "main.77123741.js.map": "/valentines-day-react-grace/static/js/main.77123741.js.map",
     "787.c4e7f8f9.chunk.js.map": "/valentines-day-react-grace/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e581720c.css",
-    "static/js/main.17250ed3.js"
+    "static/css/main.d66deb63.css",
+    "static/js/main.77123741.js"
   ]
 }
