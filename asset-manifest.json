@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/valentines-day-react-grace/static/css/main.e581720c.css",
+    "main.js": "/valentines-day-react-grace/static/js/main.17250ed3.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/valentines-day-react-grace/static/js/787.c4e7f8f9.chunk.js",
+    "index.html": "/valentines-day-react-grace/index.html",
+    "main.e581720c.css.map": "/valentines-day-react-grace/static/css/main.e581720c.css.map",
+    "main.17250ed3.js.map": "/valentines-day-react-grace/static/js/main.17250ed3.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/valentines-day-react-grace/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e581720c.css",
+    "static/js/main.17250ed3.js"
+  ]
+}
